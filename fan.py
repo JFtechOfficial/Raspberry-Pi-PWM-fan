@@ -6,6 +6,16 @@ import time
 import sys
 
 # Configuration
+with open('fan.json') as f:
+    data = commentjson.load(f)
+fan_pin = data['args']['pin']
+wait_time = data['args']['wait_time']
+fan_min = data['args']['fan_min']
+pwm_freq = data['args']['pwm_freq']
+tempSteps = data['args']['tempSteps']
+speedSteps = data['args']['speedSteps']
+hyst = data['args']['hysteresis']
+
 FAN_PIN = 24            # BCM pin used to drive transistor's base
 WAIT_TIME = 1           # [s] Time to wait between each refresh
 FAN_MIN = 20            # [%] Fan minimum speed.
