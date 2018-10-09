@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 
 import RPi.GPIO as GPIO
+import json
 import time
 import sys
 
 # Configuration
 with open('fan.json') as f:
-    data = commentjson.load(f)
+    data = json.load(f)
 fan_pin = data['args']['pin']
 wait_time = data['args']['wait_time']
 fan_min = data['args']['fan_min']
