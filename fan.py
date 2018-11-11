@@ -9,25 +9,25 @@ import sys
 # Configuration
 with open('fan.json') as f:
     data = json.load(f)
-fan_pin = data['args']['pin']
-wait_time = data['args']['wait_time']
-fan_min = data['args']['fan_min']
-pwm_freq = data['args']['pwm_freq']
+FAN_PIN = data['args']['pin']
+WAIT_TIME = data['args']['wait_time']
+FAN_MIN = data['args']['fan_min']
+PWM_FREQ = data['args']['pwm_freq']
 tempSteps = data['args']['tempSteps']
 speedSteps = data['args']['speedSteps']
 hyst = data['args']['hysteresis']
 
-FAN_PIN = 24            # BCM pin used to drive transistor's base
-WAIT_TIME = 1           # [s] Time to wait between each refresh
-FAN_MIN = 20            # [%] Fan minimum speed.
-PWM_FREQ = 25           # [Hz] Change this value if fan has strange behavior
+# FAN_PIN = 24            # BCM pin used to drive transistor's base
+# WAIT_TIME = 1           # [s] Time to wait between each refresh
+# FAN_MIN = 20            # [%] Fan minimum speed.
+# PWM_FREQ = 25           # [Hz] Change this value if fan has strange behavior
 
 # Configurable temperature and fan speed steps
-tempSteps = [50, 70]    # [°C]
-speedSteps = [0, 100]   # [%]
+# tempSteps = [50, 70]    # [°C]
+# speedSteps = [0, 100]   # [%]
 
 # Fan speed will change only of the difference of temperature is higher than hysteresis
-hyst = 1
+# hyst = 1
 
 # Setup GPIO pin
 GPIO.setmode(GPIO.BCM)
