@@ -4,7 +4,7 @@
         "args" :
         {
 		"gpio-mode" : "BCM",
-		"pin" : 26,
+		"pin" : 24,
 		"wait_time" : 1,
 		"fan_min" : 20,
 		"pwm_freq" : 25,
