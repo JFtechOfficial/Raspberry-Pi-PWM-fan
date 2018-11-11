@@ -8,7 +8,7 @@
 		"wait_time" : 1,
 		"fan_min" : 20,
 		"pwm_freq" : 25,
-		"tempSteps " : [55, 70],
+		"tempSteps " : [50, 70],
 		"speedSteps " : [0, 100],
 		"hysteresis " : 1
         }
