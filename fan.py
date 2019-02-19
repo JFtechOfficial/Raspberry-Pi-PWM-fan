@@ -4,10 +4,11 @@
 import RPi.GPIO as GPIO
 import json
 import time
+import os
 import sys
 
 # Configuration
-with open('fan.json') as f:
+with open(os.path.join(sys.path[0], 'fan.json')) as f:
     data = json.load(f)
 FAN_PIN = data['args']['pin']
 WAIT_TIME = data['args']['wait_time']
