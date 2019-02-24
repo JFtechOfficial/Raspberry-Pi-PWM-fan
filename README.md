@@ -6,4 +6,4 @@ circuit has
 * 5V and GND output (for the fan)
 
 
-see the [PWM_fan_circuit diagram](https://github.com/JFtechOfficial/Raspberry-Pi-PWM-fan/blob/master/PWM_fan_circuit.png)
+see the [PWM_fan_circuit diagram](https://raw.githubusercontent.com/JFtechOfficial/Raspberry-Pi-PWM-fan/master/PWM_fan_circuit.png)
