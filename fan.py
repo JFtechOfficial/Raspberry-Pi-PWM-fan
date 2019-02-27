@@ -14,8 +14,8 @@ FAN_PIN = data['args']['pin']
 WAIT_TIME = data['args']['wait_time']
 FAN_MIN = data['args']['fan_min']
 PWM_FREQ = data['args']['pwm_freq']
-tempSteps = data['args']['tempSteps']
-speedSteps = data['args']['speedSteps']
+tempSteps = data['args']['temp_steps']
+speedSteps = data['args']['speed_steps']
 hyst = data['args']['hysteresis']
 
 # FAN_PIN = 24            # BCM pin used to drive transistor's base
